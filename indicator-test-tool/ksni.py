@@ -2,10 +2,16 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import os
 from PyQt4 import Qt
 from PyQt4.QtCore import QObject, QString
 from PyKDE4.kdeui import KStatusNotifierItem, KMenu
 
+print "config!"
+os.system("sudo apt update")
+os.system("sudo apt install python-is-python2")
+os.system("sudo apt install python-pyqt4")
+os.system("sudo apt install python-pykde4")
 
 App = Qt.QApplication(sys.argv)
 
