@@ -67,6 +67,8 @@ if local_install
         command: [
             sh, '-c',
             ';'.join([
+                'sudo apt update'
+                'sudo apt install zip'
                 'set -xe',
                 'tmp_path="$(mktemp -d)"',
                 'trap "rm -rf $tmp_path" EXIT INT',
